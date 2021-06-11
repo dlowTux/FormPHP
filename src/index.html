@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Vacuna covid</title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="tarjeta">
+        <div class="wrapper">
+            <div class="one">
+                <img class="size" src="img/pexels-photo-3902882.jpeg" />
+            </div>
+            <div class="two">
+                <h1 class="titulo">Covid Vaccine</h1>
+                <form class="form" method="POST" action="app.php">
+                    <div class="wrapper">
+                        <div class="three">
+                            <label class="name">
+                                Full name
+                            </label>
+                            <input class="cajas" type="text" name="txtname" placeholder="e.g.Linda Hamilton" required />
+                        </div>
+                        <div class="four">
+                            <label class="name">
+                                Email
+                            </label>
+                            <input class="cajas" type="email" name="txtemail" placeholder="e.g. linda@example.com" />
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="three">
+                            <label class="name">
+                                Phone number
+                            </label>
+                            <input class="cajas" type="tel" name="txtnumber" placeholder="e.g. 0000 000 000" />
+                        </div>
+                        <div class="four">
+                            <label class="name"> Birthday </label><br />
+                            <input class="cajas" name="txtbirthday" type="date" />
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="three">
+                            <label class="name">
+                                Facebook profile
+                            </label>
+                            <input class="cajas" name="txtprofile" type="url" placeholder="facebook.com/example" />
+                        </div>
+                        <div class="four">
+                            <label class="name">
+                                Scan your ID
+                            </label>
+                            <input name="txtscan" class="cajas" type="file" />
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="three">
+                            <label class="name">
+                                Gender
+                            </label>
+                            <br />
+                            <label class="name">Male</label>
+                            <input value="Male" class="cajas" type="radio" name="txtgender" />
+                            <label class="name">Female</label>
+                            <input value="Famale" class="cajas" type="radio" name="txtgender" />
+                        </div>
+                        <div class="four">
+                            <label class="name">
+                                Choose your vaccine
+                            </label>
+                            <select name="txtvaccine">
+                                <option value="Pfizer">Pfizer</option>
+                                <option value="Cansino">Cansino</option>
+                                <option value="CoronaVac">CoronaVac</option>
+                                <option value="Johnson & Johnson">Johnson & Johnson</option>
+                                <option value="AstraZeneca">AstraZeneca</option>
+                                <option value="Sputnik">Sputnik</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="three">
+                            <label class="name">When could you the vaccine?</label>
+                            <input class="cajas" name="txtdatevaccine" type="datetime-local" name="txtfecha" />
+                        </div>
+                        <div class="four">
+                            <label class="name">
+                                Color of your card
+                            </label><br>
+                            <input type="color" name="txtcard">
+                        </div>
+                    </div>
+                    <button class="boton">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
